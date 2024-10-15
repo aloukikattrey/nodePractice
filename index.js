@@ -3,11 +3,11 @@ const  express = require('express');
 const app= express();
 
 app.get('/', (req,res)=>{
-    res.send({hi:'there'});
+    res.send({hello:'there'});
 })
 app.get('/name', (req,res)=>{
-    res.send({hi:'aloukik'});
+    res.send({hello:'aloukik'});
 })
 
-const PORT= process.env.PORT || 5000;
+const PORT=  5000;
 app.listen(PORT);
